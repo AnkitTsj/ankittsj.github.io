@@ -1,4 +1,3 @@
-
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -17,7 +16,7 @@ function typeWriter(element) {
     const text = element.innerHTML;
     element.innerHTML = '';
     let i = 0;
-    const speed = 100; // Speed of typing in milliseconds
+    const speed = 100; 
 
     function type() {
         if (i < text.length) {
@@ -33,7 +32,6 @@ const title = document.querySelector('.hero-section h2');
 if (title) {
     typeWriter(title);
 }
-
 
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.navbar a');

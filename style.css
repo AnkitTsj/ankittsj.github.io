@@ -1,16 +1,37 @@
 html {
     height: 100%;
     background: #000;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body {
     margin: 0;
-    /* padding: 2rem; */
     color: #fff;
     font-family: 'Inter', sans-serif;
     color: #ccc;
     text-align: center;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
 h1,h2,h3 {
     font-family:  'IBM Plex Mono', monospace;
 }
@@ -131,7 +152,6 @@ h1,h2,h3 {
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .project-tech {
     margin: 1rem 0;
@@ -382,8 +402,6 @@ h1,h2,h3 {
     transform: translateY(0);
 }
 
-
-
 .navbar {
     position: fixed; 
     top: 0;
@@ -394,7 +412,14 @@ h1,h2,h3 {
     padding: 1rem 0;
     background-color: rgba(10, 10, 20, 0.3); 
     backdrop-filter: blur(10px); 
-    z-index: 1000; 
+    z-index: 1000;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.navbar::-webkit-scrollbar {
+    display: none;
 }
 
 .navbar a {
@@ -405,15 +430,17 @@ h1,h2,h3 {
     margin: 0 0.5rem;
     border-bottom: 2px solid transparent; 
     transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    white-space: nowrap;
 }
-
 
 .navbar a:hover {
     color: #fff;
 }
+
 section {
     padding: 5rem 2rem;
 }
+
 .navbar a.active {
     color: #fff;
     border-bottom-color: #4d90fe; 
@@ -439,4 +466,17 @@ section {
     margin-top: 0;
     font-size: 1.5rem;
     color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start;
+        padding: 1rem 0.5rem;
+    }
+    
+    .navbar a {
+        padding: 0.5rem 0.75rem;
+        margin: 0 0.25rem;
+        font-size: 0.9rem;
+    }
 }

@@ -5,167 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankit Kumar | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    
-
-
 </head>
 <body>
     <nav class="navbar">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#technologies">Technologies</a>
-    <a href="#contact">Contact</a>
-</nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#technologies">Technologies</a>
+        <a href="#profiles">Profiles</a>
+        <a href="#contact">Contact</a>
+    </nav>
     
     <div class="star-field"></div>
     <div class="star-field layer2"></div>
     <div class="star-field layer3"></div>
 
     <header class="hero-section">
-    <h1 class="gradient-text">Ankit Kumar</h1>
-    <h2>Software Developer ( kind of ) </h2>
+        <h1 class="gradient-text">Ankit Kumar</h1>
+        <h2>Software Developer ( kind of ) </h2>
     </header>
 
-     <div>
+    <section id="about">
         <h3>About Me:</h3>
-        <div class = 'sub-abt-box'>
-        <p class = "abt-txt">I'm Ankit, a machine learning developer passionate about making AI more accessible and understandable. My journey into ML started with a vision of building intelligent systems that could augment human capabilities - essentially creating AI tools that make complex tasks feel effortless. I enjoy the full spectrum from implementing research papers to building practical tools, with a particular interest in model optimization and interpretability.</p>
-        </div>
-    </div>
-
-
-<section id="projects">
-    <h2>Projects</h2>
-    
-    <div class="projects-container">
-
-        <div class="project-card">
-        <h3>Qbench</h3>
-        <p>A command-line tool that enables efficient local execution of large language models with automatic quantization capabilities. Unlike existing tools like Ollama, QBench focuses on model optimization through quantization to maximize performance on resource-constrained hardware</p>
-        <div class="project-tech">
-            <span>Python |</span>
-            <span>CLI</span>
-            <span>| Hugging Face</span>
-        </div>
-        <div class="project-links">
-            <a href="https://github.com/AnkitTsj/qbench">Source Code</a>
-        </div>
-        </div>
-
-
-      
-
-        <div class="project-card">
-            <h3>Rhymer</h3>
-            <p>Fine-tuned Mistral 7B on a custom synthetic dataset for creative text generation with rhyming patterns. Generated training data using Gemini API and curated it into a specialized dataset (available on Hugging Face as mldevAnkit/rhymer_tones). Achieved significant performance improvements with perplexity reduction from 10.8 to 5.7.</p>
-                <div class="project-tech">
-            <span>Python |</span>
-            <span>Data Engineering</span>
-            <span>| Hugging Face</span>
-        </div>
-            <div class="project-links">
-                <a href="https://github.com/AnkitTsj/Rhymer">Source Code</a>
-            </div>
-        </div>
-        <div class = 'project-card'>
-            <h3>Grad-CAM</h3>
-            <p>A visualization tool for understanding CNN decision-making through Grad-CAM implementation. Currently supports VGG architectures with plans for expansion. Reveals the specific image regions and patterns that influence model predictions, helping debug model behavior and build trust in AI decisions</p>
-            <div class="project-tech">
-            <span>Python |</span>
-            <span>CNN</span>
-            <span>| Seaborn</span>
-        </div>
-            <div>
-                <a href="https://github.com/AnkitTsj/GRAD_CAM">Source Code</a>
-            </div>
-        </div>
-    </div>
-    <section>
-        <div>
-            <h3 class = 'tch-hdr'>Technologies I Use: </h3>
+        <div class="sub-abt-box">
+            <p class="abt-txt">I'm Ankit, a machine learning developer passionate about making AI more accessible and understandable. My journey into ML started with a vision of building intelligent systems that could augment human capabilities - essentially creating AI tools that make complex tasks feel effortless. I enjoy the full spectrum from implementing research papers to building practical tools, with a particular interest in model optimization and interpretability.</p>
         </div>
     </section>
-    <section class="tech-ribbon">
+
+    <section id="projects">
+        <h2>Projects</h2>
         
-    <div class="tech-ribbon-content">
-        <div class="ribbon-part">
-            <i class="devicon-python-plain"></i> Python 
-            <i class="devicon-cplusplus-plain"></i> C++ 
-            <i class="devicon-pytorch-plain"></i> PyTorch 
-            <i class="devicon-javascript-plain"></i> JavaScript
-            <i class="devicon-html5-plain"></i> HTML5
-            <i class="devicon-css3-plain"></i> CSS3
-            <i class = "devicon-java-plain"></i> Java
-            <i class = "devicon-docker-plain"></i> Docker
-            <i class = "devicon-postgresql-plain"></i> SQL
-            <i class = "devicon-fastapi-plain"></i> FastAPI
-            <i class="devicon-tensorflow-original"></i> Tensorflow
-        </div>
-        <div class="ribbon-part">
-            <i class="devicon-python-plain"></i> Python 
-            <i class="devicon-cplusplus-plain"></i> C++ 
-            <i class="devicon-pytorch-plain"></i> PyTorch 
-            <i class="devicon-javascript-plain"></i> JavaScript
-            <i class="devicon-html5-plain"></i> HTML5
-            <i class="devicon-css3-plain"></i> CSS3
-            <i class = "devicon-java-plain"></i> Java
-            <i class = "devicon-docker-plain"></i> Docker
-            <i class = "devicon-postgresql-plain"></i> SQL
-            <i class = "devicon-fastapi-plain"></i> FastAPI
-            <i class="devicon-tensorflow-original"></i> Tensorflow
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Qbench</h3>
+                <p>A command-line tool that enables efficient local execution of large language models with automatic quantization capabilities. Unlike existing tools like Ollama, QBench focuses on model optimization through quantization to maximize performance on resource-constrained hardware</p>
+                <div class="project-tech">
+                    <span>Python |</span>
+                    <span>CLI</span>
+                    <span>| Hugging Face</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/AnkitTsj/qbench">Source Code</a>
+                </div>
+            </div>
 
+            <div class="project-card">
+                <h3>Rhymer</h3>
+                <p>Fine-tuned Mistral 7B on a custom synthetic dataset for creative text generation with rhyming patterns. Generated training data using Gemini API and curated it into a specialized dataset (available on Hugging Face as mldevAnkit/rhymer_tones). Achieved significant performance improvements with perplexity reduction from 10.8 to 5.7.</p>
+                <div class="project-tech">
+                    <span>Python |</span>
+                    <span>Data Engineering</span>
+                    <span>| Hugging Face</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/AnkitTsj/Rhymer">Source Code</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3>Grad-CAM</h3>
+                <p>A visualization tool for understanding CNN decision-making through Grad-CAM implementation. Currently supports VGG architectures with plans for expansion. Reveals the specific image regions and patterns that influence model predictions, helping debug model behavior and build trust in AI decisions</p>
+                <div class="project-tech">
+                    <span>Python |</span>
+                    <span>CNN</span>
+                    <span>| Seaborn</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/AnkitTsj/GRAD_CAM">Source Code</a>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-<section class="profile-section">
-    <h3 class="heading-with-lines">
-    <span>Profiles & Links</span>
-    </h3>
-    <div class="profiles">
-        <a href="https://medium.com/@devbyankit">
-            <img src="https://cdn-icons-png.flaticon.com/128/3670/3670068.png" alt="Medium Logo" class="icon"> 
-            Medium
-        </a>
-        <a href="https://leetcode.com/u/ankit-ckpt">
-            <img src="https://img.icons8.com/?size=160&id=dc6kdToG53HN&format=png" alt="LeetCode Logo" class="icon"> 
-            LeetCode
-        </a>
-        <a href="https://github.com/ankittsj">
-            <img src="https://cdn-icons-png.flaticon.com/128/919/919847.png" alt="GitHub Logo" class="icon"> 
-            GitHub
-        </a>
-    </div>
-</section>
-</section>
-<section id="contact">
-    <h3 class="heading-with-lines"><span>Contact Me </span></h3>
-    
-    <div class="contact-card">
-        <form action="https://formspree.io/f/mblkejqj" method="POST">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </section>
+
+    <section id="technologies">
+        <h3 class="tch-hdr">Technologies I Use:</h3>
+        <div class="tech-ribbon">
+            <div class="tech-ribbon-content">
+                <div class="ribbon-part">
+                    <i class="devicon-python-plain"></i> Python 
+                    <i class="devicon-cplusplus-plain"></i> C++ 
+                    <i class="devicon-pytorch-plain"></i> PyTorch 
+                    <i class="devicon-javascript-plain"></i> JavaScript
+                    <i class="devicon-html5-plain"></i> HTML5
+                    <i class="devicon-css3-plain"></i> CSS3
+                    <i class="devicon-java-plain"></i> Java
+                    <i class="devicon-docker-plain"></i> Docker
+                    <i class="devicon-postgresql-plain"></i> SQL
+                    <i class="devicon-fastapi-plain"></i> FastAPI
+                    <i class="devicon-tensorflow-original"></i> Tensorflow
+                </div>
+                <div class="ribbon-part">
+                    <i class="devicon-python-plain"></i> Python 
+                    <i class="devicon-cplusplus-plain"></i> C++ 
+                    <i class="devicon-pytorch-plain"></i> PyTorch 
+                    <i class="devicon-javascript-plain"></i> JavaScript
+                    <i class="devicon-html5-plain"></i> HTML5
+                    <i class="devicon-css3-plain"></i> CSS3
+                    <i class="devicon-java-plain"></i> Java
+                    <i class="devicon-docker-plain"></i> Docker
+                    <i class="devicon-postgresql-plain"></i> SQL
+                    <i class="devicon-fastapi-plain"></i> FastAPI
+                    <i class="devicon-tensorflow-original"></i> Tensorflow
+                </div>
             </div>
-            
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
-            </div>
-            
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-</section>
-   
+        </div>
+    </section>
+
+    <section id="profiles" class="profile-section">
+        <h3 class="heading-with-lines">
+            <span>Profiles & Links</span>
+        </h3>
+        <div class="profiles">
+            <a href="https://medium.com/@devbyankit">
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670068.png" alt="Medium Logo" class="icon"> 
+                Medium
+            </a>
+            <a href="https://leetcode.com/u/ankit-ckpt">
+                <img src="https://img.icons8.com/?size=160&id=dc6kdToG53HN&format=png" alt="LeetCode Logo" class="icon"> 
+                LeetCode
+            </a>
+            <a href="https://github.com/ankittsj">
+                <img src="https://cdn-icons-png.flaticon.com/128/919/919847.png" alt="GitHub Logo" class="icon"> 
+                GitHub
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3 class="heading-with-lines"><span>Contact Me</span></h3>
+        
+        <div class="contact-card">
+            <form action="https://formspree.io/f/mblkejqj" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <script src="script.js"></script>
-
-
 </body>
-</html> 
+</html>
