@@ -86,22 +86,29 @@ h1,h2,h3 {
     }
 }
 
-.projects-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    text-align: left;
-    margin-top: 2rem;
+@media (max-width: 767px) {
+    .projects-container {
+        padding: 0 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .project-card {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
-.project-card {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    padding: 1.5rem;
-    flex: 1;
-    max-width: 400px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.projects-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    scroll-behavior: smooth;
+    padding: 0 1rem; 
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .project-card:hover {
@@ -112,13 +119,88 @@ h1,h2,h3 {
 .project-card h3 {
     margin-top: 0;
     color: #a0c4ff;
+    font-size: 1.25rem; 
+}
+.project-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 100%; 
+    max-width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.project-tech {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #ccc;
 }
 
 .project-links a {
     margin-right: 1rem;
     border-bottom: 1px solid #4d90fe;
     padding-bottom: 2px;
+    font-size: 0.95rem;
 }
+
+.project-card p {
+    font-size: 0.95rem; 
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .projects-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    
+    .project-card {
+        flex: 1 1 calc(50% - 3rem); 
+        max-width: calc(50% - 3rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects-container {
+        gap: 2rem;
+    }
+    
+    .project-card {
+        flex: 1 1 calc(33.333% - 1.33rem); 
+        max-width: calc(33.333% - 1.33rem);
+    }
+    
+    .project-card h3 {
+        font-size: 1.5rem; 
+    }
+    
+    .project-card p {
+        font-size: 1rem; 
+    }
+    
+    .project-links a {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .projects-container {
+        max-width: 1200px;
+        margin: 2rem auto 0;
+        gap: 2.5rem;
+    }
+    
+    .project-card {
+        flex: 1 1 calc(33.333% - 1.67rem);
+        max-width: calc(33.333% - 1.67rem);
+    }
+} 
+
 .star-field {
     position: fixed;
     top: 0;
